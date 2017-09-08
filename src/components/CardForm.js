@@ -29,7 +29,7 @@ class CardForm extends React.Component {
           onChange={this.handleChange}
           placeholder="Add an answer"
         />
-        <input
+        <input className='btn green'
           type="submit"
           value="Add Card"
         />

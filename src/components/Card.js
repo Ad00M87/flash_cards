@@ -32,10 +32,15 @@ class Card extends React.Component{
 
   render() {
     return(
-      <div>
+      <div className="col s4">
+        <div className="card blue-grey darken-1">
+          <div className="card-content white-text">
         {this.cardBody()}
-        <br />
+        </div>
+        <div className="card-action">
         <CardButtonList id={this.props.id} onFlip={this.flipCard} onEdit={this.edit} onDelete={this.props.deleteCard} />
+        </div>
+        </div>
       </div>
     )
   }

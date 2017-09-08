@@ -28,11 +28,17 @@ class FlashCardApp extends React.Component {
   render() {
     return (
       <div>
-        <CardForm addCard={this.addCard} />
+        <div className="container center-align">
+          <div className="container center-align blue-grey darken-1 wide">
+            <CardForm addCard={this.addCard} />
+          </div>
+        </div>
+        <div className="row">
         <CardList
         cards={this.state.cards}
         deleteCard={this.deleteCard}
         />
+        </div>
       </div>
     )
   }
